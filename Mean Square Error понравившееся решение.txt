@@ -1,0 +1,6 @@
+using System.Linq;
+public class Kata
+{
+  public static double Solution(int[] xs, int[] ys) =>
+    xs.Zip(ys, (x,y) => (x-y)*(x-y)).Average();
+}
